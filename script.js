@@ -94,7 +94,7 @@ function displayCurrentWeather(data) {
 
         currentCity.innerHTML = `${data.name}`;
         currentConditionEle.innerHTML = `Description: ${description}`;
-        currentTempEle.innerHTML = `Temperature: ${temperature}°C`;
+        currentTempEle.innerHTML = `<i class="fa-solid fa-temperature-three-quarters"></i> Temperature: ${temperature}°C`;
         currentHumidityEle.innerHTML = `<i class="fas fa-tint"></i> Humidity: ${humidity}%`;
         currentWindSpeedEle.innerHTML = `<i class="fas fa-wind"></i> Wind Speed: ${windSpeed} m/s`;
         currentDateTimeEle.innerHTML = `<i class="fas fa-calendar-day"></i> Date & Time: ${dateTime}`;
