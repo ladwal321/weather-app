@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="majorproject.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="currentDateTime"><i class="fas fa-calendar-day"></i> Date & Time: N/A</div>
+    <div class="wrapper">
+        <div class="container">
+
+            <h1>Weather Forecast App</h1>
+            <div class="form-search">
+                <input type="text" id="cityInput" placeholder="Enter city name (or use current location)">
+            <button onclick="getWeather()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        
+            </div>
+            <div id="currentWeather">
+                <h2>Current Weather</h2>
+                
+                <div class="city-div">
+                    <div  id="currentCity"></div>
+                    <div id="weatherIcon" class="weatherIcon"><img src="" alt=""></div>
+                </div>
+
+                <div class="weather-box">
+                    <div id="currentTemp" class="boxes"> Temperature: </div>
+                    <div id="currentHumidity" class="boxes"><i class="fas fa-tint"></i> Humidity: N/A</div>
+                    <div id="currentWindSpeed" class="boxes"><i class="fas fa-wind"></i> Wind Speed: N/A</div>
+                    <div id="currentCondition" class="boxes" >Description: N/A</div>
+                 
+
+                </div>
+            </div>
+            
+            <div id="forecast">
+                <h2>5-Day Forecast</h2>
+                <div id="forecastCharts">
+
+                    <canvas id="combinedChart"></canvas>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="majorproject.js"></script>
+
+
+</script>
+</body>
+</html>
