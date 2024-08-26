@@ -119,48 +119,6 @@ function displayForecast(forecastData) {
         }
     });
 
-    // new Chart(tempChartCtx, {
-    //     type: 'line',
-    //     data: {
-    //         labels: labels,
-    //         datasets: [{
-    //             label: 'Temperature (°C)',
-    //             data: temps,
-    //             borderColor: 'rgba(75, 192, 192, 1)',
-    //             borderWidth: 1,
-    //             fill: false
-    //         }]
-    //     },
-    //     options: {
-    //         scales: {
-    //             y: {
-    //                 beginAtZero: true
-    //             }
-    //         }
-    //     }
-    // });
-
-    // new Chart(humidityChartCtx, {
-    //     type: 'line',
-    //     data: {
-    //         labels: labels,
-    //         datasets: [{
-    //             label: 'Humidity (%)',
-    //             data: humidities,
-    //             borderColor: 'rgba(153, 102, 255, 1)',
-    //             borderWidth: 1,
-    //             fill: false
-    //         }]
-    //     },
-    //     options: {
-    //         scales: {
-    //             y: {
-    //                 beginAtZero: true
-    //             }
-    //         }
-    //     }
-    // });
-
     const ctx = document.getElementById('combinedChart').getContext('2d');
 
     new Chart(ctx, {
